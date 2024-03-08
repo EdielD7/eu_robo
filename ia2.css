@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.ficha-tecnica {
+    width: 80%;
+    margin: 20px auto;
+    border: 5px solid #00f;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-tecnica h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00f;
+}
+
+.ficha-tecnica img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.ficha-tecnica p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.ficha-tecnica p:first-child {
+    font-weight: bold;
+}
