@@ -1,0 +1,26 @@
+.leis {
+    padding: 5.6vw;
+    display: flex;
+    flex-direction: column;
+
+    &__ol {
+        text-align: center;
+        counter-reset: ol;
+        list-style: none;
+        max-width: 500px;
+        align-self: center;
+        
+        &__lei {
+            counter-increment: ol;
+            margin-bottom: 80px;
+            font-size: 1.2em;
+    
+        &::before {
+        white-space: pre-wrap;
+        content:"— " counter(ol, upper-roman) " — \A";
+        color: orange;
+        font-size: 125%;
+        }
+        }
+    }
+}

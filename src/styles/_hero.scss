@@ -1,0 +1,31 @@
+.hero {
+    min-height: 800px;  
+    padding: 5.6vw;
+
+    &__content {
+        padding-top: 80px;
+        max-width: 640px;
+    }
+
+    &__subtitle {
+        padding-bottom: 40px;
+    }
+    
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+
+        .button {
+            margin-top: 2vw;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+    }
+}
