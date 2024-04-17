@@ -1,6 +1,10 @@
+@use 'variaveis';
+
 .hero {
-    min-height: 800px;  
     padding: 5.6vw;
+    min-height: 80vh;
+    background-image: linear-gradient(to top, rgb(26, 26, 29)1%, rgba(20, 20, 29, 0.703)30%), url(../images/hero_desktop.jpg);
+    background-size: cover;
 
     &__content {
         padding-top: 80px;
