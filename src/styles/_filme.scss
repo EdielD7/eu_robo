@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.filme {
+    // padding: 5.6vw; 
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__ficha {
+            font-size: 1.25em;
+            text-align: left;
+
+            span{
+                font-weight: bold;
+                margin-right: 8px;
+            }
+
+            h3 {
+                color: variaveis.$corTextoSecundario;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__image {
+            height: 50vh;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}

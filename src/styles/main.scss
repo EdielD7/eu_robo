@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'leis';
+@use 'filme';
 @use 'variaveis';
 
 * {
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: #262629;
+    background-color: variaveis.$corDeFundo;
     color: #fff;
     & a {
         color: #fff;
@@ -39,7 +40,7 @@ body {
     width: 80%;
     height: 50px;
     font-size: 18px;
-    color: variaveis.$corTextoSecundario;
+    color: variaveis.$corTextoPrincipal;
     background-color: variaveis.$corDeFundoBotaoPrimario;
     text-transform: uppercase;
     border-radius: 8px;
