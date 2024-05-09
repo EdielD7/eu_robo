@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'leis';
 @use 'filme';
+@use 'livro';
 @use 'variaveis';
 
 * {
@@ -40,17 +41,17 @@ body {
     width: 80%;
     height: 50px;
     font-size: 18px;
-    color: variaveis.$corTextoPrincipal;
-    background-color: variaveis.$corDeFundoBotaoPrimario;
+    // color: variaveis.$corTextoPrincipal;
+    background-color: variaveis.$corDeFundoBotaoSecundario;
     text-transform: uppercase;
     border-radius: 8px;
     text-decoration: none;
     padding: 4px 8px;
     letter-spacing: 1px;
-    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+    border: 1px solid variaveis.$corDeFundoBotaoSecundario;
 
     &:hover {
-        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+        background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
     }
 
     &--secondary {
