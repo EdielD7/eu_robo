@@ -27,6 +27,82 @@ body {
 //     max-width: 1024px;
 // }
 
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    
+    &__img--md {
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: 8px;
+        margin: 0 auto;
+    }    
+    
+    span{
+        font-weight: bold;
+        margin-right: 8px;
+    }
+    
+    &__text-container {
+        padding: 0 2vw;
+        
+        h2 {
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 24px;
+        }
+
+        P {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+    }
+
+    P {
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+            transform: scaleX(-1)
+
+        }
+
+        &__text-container {
+            position: absolute;
+            top: 0;
+            left: 60%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(to left, rgba(variaveis.$corDeFundo, 0.6) 90%, rgba(38, 38, 41, 0) 100%); 
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
 .section-title {
     text-align: center;
     font-size: 2em;
@@ -38,10 +114,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 250px;
     height: 50px;
     font-size: 18px;
-    // color: variaveis.$corTextoPrincipal;
     background-color: variaveis.$corDeFundoBotaoSecundario;
     text-transform: uppercase;
     border-radius: 8px;
@@ -51,7 +126,7 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoSecundario;
 
     &:hover {
-        background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
+        background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 5%);
     }
 
     &--secondary {

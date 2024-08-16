@@ -1,11 +1,6 @@
 @use 'variaveis';
 
 .livro {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 5.6vw;
-    
     &__content {
         display: flex;
         justify-content: space-between;
@@ -13,21 +8,10 @@
         gap: 40px;
         
         &__ficha {
-            font-size: 1.25em;
-            text-align: justify;
 
             h3 {
                 color: variaveis.$corTextoSecundario;
                 margin-bottom: 24px;
-            }
-
-            span{
-                font-weight: bold;
-                margin-right: 8px;
-            }
-
-            P {
-                margin-bottom: 8px;
             }
 
         }

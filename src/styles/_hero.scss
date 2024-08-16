@@ -3,13 +3,11 @@
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: linear-gradient(to top, variaveis.$corDeFundo 1%, #2626294d 30%), url(../images/hero_desktop.jpg);
     background-size: cover; 
-
-    &__content {
-        padding-top: 80px;
-        max-width: 640px;
-    }
 
     &__subtitle {
         padding-bottom: 40px;
@@ -23,13 +21,6 @@
 
     &__buttons {
         display: flex;
-        justify-content: space-between;
         gap: 16px;
-
-        .button {
-            margin-top: 2vw;
-            margin-bottom: 8px;
-            cursor: pointer;
-        }
     }
 }

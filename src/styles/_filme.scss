@@ -1,32 +1,22 @@
 @use 'variaveis';
 
 .filme {
-    // padding: 5.6vw; 
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 5.6vw;
-    
     &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
         &__ficha {
             font-size: 1.25em;
             text-align: left;
-
-            span{
-                font-weight: bold;
-                margin-right: 8px;
-            }
-
+            
             h3 {
                 color: variaveis.$corTextoSecundario;
                 margin-bottom: 24px;
             }
+            
+            span{
+                font-weight: bold;
+                margin-right: 8px;
+            }
         }
-
+        
         &__image {
             height: 50vh;
             border-radius: 8px;
